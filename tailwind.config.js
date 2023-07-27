@@ -2,6 +2,9 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
+		screens: {
+			lg: '1200px',
+		},
 		extend: {
 			colors: {
 				Violet: 'hsl(257, 40%, 49%)',
@@ -10,6 +13,9 @@ export default {
 			fontFamily: {
 				'Open-Sans': ['Open Sans', 'sans-serif'],
 				Poppins: ['Poppins', 'sans-serif'],
+			},
+			fontSize: {
+				'dynamic-body': 'clamp(1.5rem, 1.017rem + 2.0606vw, 2.5625rem)',
 			},
 			backgroundImage: {
 				mobileBG: 'url(/bg-mobile.svg)',
