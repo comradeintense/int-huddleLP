@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" />
@@ -18,24 +19,62 @@
 		</noscript>
 		<title>Frontend Mentor | Huddle landing page with single introductory section</title>
 	</head>
-	<body class="text-white bg-Violet">
-		<main>
-			<!-- container -->
-			<div>
-				<!-- navbar -->
-				<div>
-					<img src="/logo.svg" alt="" />
+	<body class="text-white bg-no-repeat bg-contain bg-Violet bg-mobileBG lg:bg-desktopBG lg:bg-top lg:bg-auto">
+		<!-- container -->
+		<div class="py-[2.375rem] px-[2.5rem] lg:px-[5rem]">
+			<!-- navbar -->
+			<header class="w-[7.625rem] lg:w-[12.625rem]">
+				<img src="/logo.svg" alt="" />
+			</header>
+			<main>
+				<!-- Middle content -->
+				<div class="mt-[4.125rem] flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
+					<img class="lg:max-w-[43.5rem] lg:h-auto" src="/illustration-mockups.svg" alt="" />
+					<div class="lg:ml-14 lg:mr-4">
+						<h2 class="font-semibold font-Poppins text-[1.5rem] lg:text-[2.5rem] mt-[4.5rem] tracking-tight lg:text-left">
+							Build The Community Your Fans Will Love
+						</h2>
+						<p class="mt-[1.75rem] font-Open-Sans lg:text-left lg:text-[1.125rem]">
+							Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in
+							genuine discussion.
+						</p>
+						<div class="mt-[1.625rem] bg-white text-Violet w-[12.5rem] py-3 rounded-3xl shadow-lg font-Poppins hover:bg-Soft-Magenta hover:text-white ">
+							<a href="#">Register</a>
+						</div>
+					</div>
 				</div>
-				Build The Community Your Fans Will Love Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections
-				with your users as you engage in genuine discussion. Register
-			</div>
-		</main>
+			</main>
+			<!-- Social Links Footer -->
+			<footer class="mt-16">
+				<ul class="flex flex-row items-center justify-center gap-4 lg:justify-end">
+					<li>
+						<a
+							href="#"
+							class="flex items-center justify-center w-8 h-8 transition border border-white rounded-full hover:border-Soft-Magenta hover:text-Soft-Magenta lg:w-10 lg:h-10"
+						>
+							<i class="text-sm fa-brands fa-facebook-f"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="flex items-center justify-center w-8 h-8 transition border border-white rounded-full hover:border-Soft-Magenta hover:text-Soft-Magenta lg:w-10 lg:h-10"
+						>
+							<i class="text-sm fa-brands fa-twitter"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="flex items-center justify-center w-8 h-8 transition border border-white rounded-full hover:border-Soft-Magenta hover:text-Soft-Magenta lg:w-10 lg:h-10"
+						>
+							<i class="text-sm fa-brands fa-instagram"></i
+						></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
 
-		<footer>
-			<p class="attribution">
-				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>

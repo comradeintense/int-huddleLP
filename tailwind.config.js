@@ -11,6 +11,10 @@ export default {
 				'Open-Sans': ['Open Sans', 'sans-serif'],
 				Poppins: ['Poppins', 'sans-serif'],
 			},
+			backgroundImage: {
+				mobileBG: 'url(/bg-mobile.svg)',
+				desktopBG: 'url(/bg-desktop.svg)',
+			},
 		},
 	},
 	plugins: [],
